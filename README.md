@@ -51,3 +51,9 @@ Gradient Boosting (Confusion Matrix on left) Decision Trees is the best model si
 Here are the most important words (using gini importance) the model uses for determining what category (fake or true) an article falls into
 
 ![Screenshot from 2021-07-16 16-16-25](https://user-images.githubusercontent.com/57776494/126013883-5ce63d09-5793-497e-92eb-7cfff0d02433.png)
+
+# Conclusion/Next Steps
+
+As you can see from the confusion matrix, the model performs very well. So well, in fact, that I wonder if there is some leakage in the data, or my model is picking up on the fact that true articles and false articles come from a particular set of news agencies with no overlap. This warrants further investigation. 
+
+I would also want to use more state of the art models such as Bert - a pretrained neural network t tries to model connections between words (since, intuitively, the presence of one word is a predictor for the presence of another in a given article, and that relationship isn't really captures by any of the models tested, which really just looks at the overall presence of any group of words) in the hopes of improving my predictions.
